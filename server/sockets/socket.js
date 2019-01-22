@@ -39,7 +39,7 @@ io.on('connection', (client) => {
 
         //actualizar / notificar cambios en los ultimos 4
         client.broadcast.emit('ultimos4', {
-            ultimo4: ticketControl.getUltimos4()
+            ultimos4: ticketControl.getUltimos4()
         });
     });
 
