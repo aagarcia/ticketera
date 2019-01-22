@@ -21,11 +21,10 @@ socket.on('estadoActual', function(data) {
 });
 
 socket.on('ultimos4', function(data) {
-    //console.log(data);
+    console.log(data);
+    actualizaHTML(data.ultimos4);
     var audio = new Audio('audio/new-ticket.mp3');
     audio.play();
-
-    actualizaHTML(data.ultimos4);
 });
 
 function actualizaHTML(ultimos4) {
